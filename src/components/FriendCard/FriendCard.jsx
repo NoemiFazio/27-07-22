@@ -1,5 +1,5 @@
 import "./index.css";
-import { DELETE } from "../../utils/api";
+
 const FriendCard = ({ friendData, deleteFriendBtn }) => {
   const { photo, name } = friendData;
 

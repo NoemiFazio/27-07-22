@@ -9,6 +9,7 @@ import "./App.css";
 function App() {
   const [isRenderedList, setRenderedList] = useState(false);
   const [isRenderedFriendList, setRenderedFriendList] = useState(false);
+  const [filteredList, setFilteredList] = useState("");
 
   return (
     <div className="App">
@@ -27,9 +28,16 @@ function App() {
             isRenderedList={isRenderedList}
             onAddButton={setRenderedList}
           />
+          <input
+            type="text"
+            onChange={(event) => setFilteredList(event.target.value)}
+            className="Search"
+            placeholder="Cerca messaggio per utente..."
+          />
           <MessageCardList
             isRenderedList={isRenderedList}
             setRenderedList={setRenderedList}
+            filteredList={filteredList}
           />
         </div>
       </div>

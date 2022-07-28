@@ -35,7 +35,7 @@ const AddFriend = ({ isRenderedFriendList, onAddFriendButton }) => {
       <input
         className="AddFriend__img"
         type="text"
-        placeholder="Aggiungi l'url dell'immagine di profilo"
+        placeholder="Url dell'immagine di profilo"
         value={friendImg}
         onChange={(e) => setFriendImg(e.target.value)}
         required

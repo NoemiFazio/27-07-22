@@ -12,6 +12,7 @@
 }
 .App__friends {
   color: lightgrey;
+  text-align: center;
 }
 
 .App_messages {
